@@ -1,0 +1,233 @@
+.dogs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dogs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dogs-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.dog-form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.dog-form-card h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.charakter-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.charakter-btn {
+  padding: 8px 16px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.charakter-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.charakter-btn.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.dogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dog-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dog-photo-section {
+  position: relative;
+  height: 200px;
+  background: #f5f7fa;
+}
+
+.dog-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dog-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.photo-upload-btn-small {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.photo-upload-btn-small:hover {
+  transform: scale(1.1);
+}
+
+.dog-info {
+  padding: 20px;
+}
+
+.dog-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 22px;
+}
+
+.dog-breed {
+  margin: 0 0 15px 0;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.dog-details {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.detail-tag {
+  padding: 4px 12px;
+  background: #f5f7fa;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.dog-charaktere {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.charakter-tag {
+  padding: 4px 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.dog-besonderheiten {
+  margin: 12px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn-delete {
+  width: 100%;
+  padding: 10px;
+  background: #fee;
+  color: #c33;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.btn-delete:hover {
+  background: #fdd;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.empty-state p {
+  margin: 0 0 20px 0;
+  color: #666;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .dogs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .dogs-grid {
+    grid-template-columns: 1fr;
+  }
+}
