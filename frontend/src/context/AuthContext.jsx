@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       return {
         success: false,
-        message: error.response?.data?.message || 'Login fehlgeschlagen'
+        message: error.message || error.response?.data?.message || 'Login fehlgeschlagen'
       };
     }
   };
@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       return {
         success: false,
-        message: error.response?.data?.message || 'Registrierung fehlgeschlagen'
+        message: error.message || error.response?.data?.message || 'Registrierung fehlgeschlagen'
       };
     }
   };

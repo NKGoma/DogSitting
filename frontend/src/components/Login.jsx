@@ -43,6 +43,11 @@ const Login = () => {
         <h1>Anmelden</h1>
         <p className="auth-subtitle">Willkommen zurück zur Hundesitting-Plattform!</p>
 
+        <div className="success-message">
+          <strong>🎉 Demo-Version!</strong><br />
+          Testen Sie die App mit: <strong>anna@example.com</strong> / <strong>demo123</strong>
+        </div>
+
         {error && <div className="error-message">{error}</div>}
 
         <form onSubmit={handleSubmit}>
